@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Own notes</title>
+
+  <form action="/logout" method="post">
+    <button type="submit">Logout</button>
+</form>
+
+</head>
+<body>
+  <h1>Notes</h1>
+  <p>Save notes.</p>
+  <form method="post" action="/new">
+    <label for="title">Label</label>
+    <input id="title" name="title" required maxlength="100">
+    <label for="body">Text</label>
+    <textarea id="body" name="body" rows="4" required></textarea>
+    <button type="submit">Save</button>
+  </form>
+  <h2>Notes</h2>
+  <form action="/search" method="get">
+    <input type="text" name="q" placeholder="Search notes">
+    <button type="submit">Search</button>
+</form>
+  <!-- NOTES -->
+</body>
+</html>
